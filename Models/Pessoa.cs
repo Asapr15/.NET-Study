@@ -10,7 +10,7 @@ namespace _NET_STUDY.Models
         private string _nome;
         private int _idade;
 
-        public string nome 
+        public string Nome
         {   get
             {
                 return _nome.ToUpper();
@@ -27,7 +27,13 @@ namespace _NET_STUDY.Models
                 _nome = value;
             }
         }
-        public int idade
+
+        public string Sobrenome { get; set; }
+
+        public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
+
+
+        public int Idade
         {
             get => _idade;
 
@@ -44,7 +50,7 @@ namespace _NET_STUDY.Models
 
         public void Apresentar (){
 
-            Console.WriteLine ($"Nome: {nome}, Idade: {idade}");
+            Console.WriteLine ($"Nome: {NomeCompleto}, Idade: {Idade}");
         }
     }
 }
