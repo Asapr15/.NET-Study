@@ -1,14 +1,8 @@
 ﻿using _NET_STUDY.Models;
 
-Pessoa p1 = new Pessoa();
+Pessoa p1 = new Pessoa(nome: "Alisson",sobrenome: "Dos Santos");
 
-p1.Nome = "Alisson";
-p1.Sobrenome = "Dos Santos";
-
-Pessoa p2 = new Pessoa();
-
-p2.Nome = "Jorge";
-p2.Sobrenome = "Costa";
+Pessoa p2 = new Pessoa("Jorge","Da Costa");
 
 Curso cursoDeIngles = new Curso();
 
