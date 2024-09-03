@@ -1,16 +1,78 @@
 ﻿using _NET_STUDY.Models;
 
-Pessoa p1 = new Pessoa(nome: "Alisson",sobrenome: "Dos Santos");
+decimal valorMonetario = 1582.40M;
 
-Pessoa p2 = new Pessoa("Jorge","Da Costa");
+Console.WriteLine($"{valorMonetario:C}");
 
-Curso cursoDeIngles = new Curso();
 
-cursoDeIngles.Nome = "Ingles";
-cursoDeIngles.Alunos = new List<Pessoa>();
-cursoDeIngles.AdicionarAluno(p1);
-cursoDeIngles.AdicionarAluno(p2);
-cursoDeIngles.ListarAlunos();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// string numero1 ="10";
+// string numero2 ="20";
+
+// string resultado = numero1 + numero2;
+
+// Console.WriteLine(resultado);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Pessoa p1 = new Pessoa(nome: "Alisson",sobrenome: "Dos Santos");
+
+// Pessoa p2 = new Pessoa(nome: "Jorge",sobrenome: "Da Costa");
+
+// Curso cursoDeIngles = new Curso();
+
+// cursoDeIngles.Nome = "Ingles";
+// cursoDeIngles.Alunos = new List<Pessoa>();
+// cursoDeIngles.AdicionarAluno(p1);
+// cursoDeIngles.AdicionarAluno(p2);
+// cursoDeIngles.ListarAlunos();
 
 
 
