@@ -1,19 +1,61 @@
 ﻿using _NET_STUDY.Models;
 using System.Globalization;
 
-CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
+string dataString = "2022-04-17 18:00";
 
-decimal valorMonetario = 1582.40M;
+bool sucesso = DateTime.TryParseExact(dataString,
+                      "yyyy-MM-dd HH:mm",
+                       CultureInfo.InvariantCulture,
+                       DateTimeStyles.None, 
+                       out DateTime data);
 
-Console.WriteLine(valorMonetario.ToString("C"));
+if (sucesso)
+{
+    Console.WriteLine($"Conversão com sucesso! Data: {data}");
+}
+else
+{
+    Console.WriteLine($"{dataString} não é uma data válida");
+}
 
-double porcentagem = .3421;
 
-Console.WriteLine(porcentagem.ToString("P"));
 
-int numero = 123456;
 
-Console.WriteLine(numero.ToString("##-##-##"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
+
+// decimal valorMonetario = 1582.40M;
+
+// Console.WriteLine(valorMonetario.ToString("C"));
+
+// double porcentagem = .3421;
+
+// Console.WriteLine(porcentagem.ToString("P"));
+
+// int numero = 123456;
+
+// Console.WriteLine(numero.ToString("##-##-##"));
 
 
 
