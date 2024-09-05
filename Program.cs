@@ -2,25 +2,77 @@
 using Models;
 using System.Globalization;
 
-Stack<int> pilha = new Stack<int>();
+Dictionary<string, string> estados = new Dictionary<string, string>();
 
-pilha.Push(4);
-pilha.Push(6);
-pilha.Push(8);
-pilha.Push(10);
+estados.Add("SP", "São Paulo");
+estados.Add("RJ", "Rio de Janeiro");
+estados.Add("MG", "Minas Gerais");
 
-foreach(int item in pilha)
-{
-    Console.WriteLine(item);
-}
+Console.WriteLine(estados["RJ"]);
 
-Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");
-pilha.Push(200);
+// foreach(var item in estados)
+// {
+//     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
 
-foreach(int item in pilha)
-{
-    Console.WriteLine(item);
-}
+// Console.WriteLine("------------------------");
+// estados.Remove("MG");
+
+// estados["SP"] = "São Paulo - Valor Alterado";
+
+// foreach(var item in estados)
+// {
+//     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
+
+// string chave = "RJ";
+// Console.WriteLine($"Verificando o elemento: {chave}");
+
+// if (estados.ContainsKey(chave))
+// {
+//     Console.WriteLine($"Valor existente: {chave}");
+// }
+// else 
+// {
+//     Console.WriteLine($"Valor não existe. E seguro Adicionar chave: {chave}");
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Stack<int> pilha = new Stack<int>();
+
+// pilha.Push(4);
+// pilha.Push(6);
+// pilha.Push(8);
+// pilha.Push(10);
+
+// foreach(int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
+
+// Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");
+// pilha.Push(200);
+
+// foreach(int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
 
 
 
