@@ -2,7 +2,46 @@
 using Models;
 using System.Globalization;
 
-new ExemploExcecao().Metodo1();
+Queue<int> fila = new Queue<int>();
+
+fila.Enqueue(2);
+fila.Enqueue(52);
+fila.Enqueue(8);
+fila.Enqueue(1);
+fila.Enqueue(25);
+
+foreach (int item in fila)
+{
+    Console.WriteLine(item);
+}
+Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
+fila.Enqueue(10);
+foreach (int item in fila)
+{
+    Console.WriteLine(item);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//new ExemploExcecao().Metodo1();
 
 
 
