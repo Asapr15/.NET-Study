@@ -2,24 +2,68 @@
 using Models;
 using System.Globalization;
 
-Queue<int> fila = new Queue<int>();
+Stack<int> pilha = new Stack<int>();
 
-fila.Enqueue(2);
-fila.Enqueue(52);
-fila.Enqueue(8);
-fila.Enqueue(1);
-fila.Enqueue(25);
+pilha.Push(4);
+pilha.Push(6);
+pilha.Push(8);
+pilha.Push(10);
 
-foreach (int item in fila)
+foreach(int item in pilha)
 {
     Console.WriteLine(item);
 }
-Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
-fila.Enqueue(10);
-foreach (int item in fila)
+
+Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");
+pilha.Push(200);
+
+foreach(int item in pilha)
 {
     Console.WriteLine(item);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Queue<int> fila = new Queue<int>();
+
+// fila.Enqueue(2);
+// fila.Enqueue(52);
+// fila.Enqueue(8);
+// fila.Enqueue(1);
+// fila.Enqueue(25);
+
+// foreach (int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
+// Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
+// fila.Enqueue(10);
+// foreach (int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
 
 
 
