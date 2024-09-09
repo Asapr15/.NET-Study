@@ -19,6 +19,12 @@ namespace _NET_STUDY.Models
             Sobrenome = sobrenome;
         }
 
+        public void Deconstruct(out string nome, out string sobrenome)
+        {
+            nome = Nome ;
+            sobrenome = Sobrenome ;
+        }
+
 
 
         private string _nome;

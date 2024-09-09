@@ -2,22 +2,51 @@
 using Models;
 using System.Globalization;
 
-LeituraArquivo arquivo = new LeituraArquivo();
+Pessoa p1 = new Pessoa ("Alisson", "Santos");
 
-var(sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+(string nome, string sobrenome) = p1;
 
-if(sucesso)
-{
-    Console.WriteLine("Quantidade de linhas do arquivo: " + quantidadeLinhas);
-    foreach (string linha in linhasArquivo)
-    {
-        Console.WriteLine(linha);
-    }
-}
-else
-{
-    Console.WriteLine("Não foi possivel ler o arquivo");
-}
+Console.WriteLine($"{nome} {sobrenome}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// LeituraArquivo arquivo = new LeituraArquivo();
+
+// var(sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+
+// if(sucesso)
+// {
+//     Console.WriteLine("Quantidade de linhas do arquivo: " + quantidadeLinhas);
+//     foreach (string linha in linhasArquivo)
+//     {
+//         Console.WriteLine(linha);
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Não foi possivel ler o arquivo");
+// }
 
 
 
