@@ -1,12 +1,55 @@
 ﻿using _NET_STUDY.Models;
+using Models;
 using System.Globalization;
 
-(int, string, string, decimal) tupla = (1, "Alisson", "Santos", 1.75M);
+LeituraArquivo arquivo = new LeituraArquivo();
 
-Console.WriteLine($"ID: {tupla.Item1}");
-Console.WriteLine($"Nome: {tupla.Item2}");
-Console.WriteLine($"Sobrenome: {tupla.Item3}");
-Console.WriteLine($"Altura: {tupla.Item4}");
+var(sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+
+if(sucesso)
+{
+    Console.WriteLine("Quantidade de linhas do arquivo: " + quantidadeLinhas);
+    foreach (string linha in linhasArquivo)
+    {
+        Console.WriteLine(linha);
+    }
+}
+else
+{
+    Console.WriteLine("Não foi possivel ler o arquivo");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// (int Id, string Nome, string Sobrenome, decimal Altura) tupla = (1, "Alisson", "Santos", 1.75M);
+
+// Console.WriteLine($"Id: {tupla.Item1}");
+// Console.WriteLine($"Nome: {tupla.Item2}");
+// Console.WriteLine($"Sobrenome: {tupla.Item3}");
+// Console.WriteLine($"Altura: {tupla.Item4}");
 
 
 
