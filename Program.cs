@@ -3,10 +3,12 @@ using Models;
 using System.Globalization;
 using Newtonsoft.Json;
 
+DateTime dataAtual = DateTime.Now;
+
 List<Venda> ListaVendas = new List<Venda>();
 
-Venda v1 = new Venda(1, "Material de escritório", 25.00M);
-Venda v2 = new Venda(2, "Licença de Software", 110.00M);
+Venda v1 = new Venda(1, "Material de escritório", 25.00M, dataAtual);
+Venda v2 = new Venda(2, "Licença de Software", 110.00M, dataAtual);
 
 ListaVendas.Add(v1);
 ListaVendas.Add(v2);
