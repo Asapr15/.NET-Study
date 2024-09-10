@@ -1,14 +1,41 @@
 ﻿using _NET_STUDY.Models;
 using Models;
 using System.Globalization;
+using Newtonsoft.Json;
 
-int numero = 12;
-bool ehPar = false;
+Venda v1 = new Venda(1, "Material de escritório", 25.00M);
+string serializado = JsonConvert.SerializeObject(v1, Formatting.Indented);
 
-// IF Ternario
-ehPar = numero % 2 == 0;
+Console.WriteLine(serializado);
 
-Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "impar"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// int numero = 12;
+// bool ehPar = false;
+
+// // IF Ternário
+// ehPar = numero % 2 == 0;
+
+// Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "impar"));
 
 
 // if(numero % 2 == 0)

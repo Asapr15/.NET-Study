@@ -13,3 +13,6 @@ C:\Users\aliss\Desktop\.NET-STUDY\obj\Debug\net8.0\refint\.NET-Study.dll
 C:\Users\aliss\Desktop\.NET-STUDY\obj\Debug\net8.0\.NET-Study.pdb
 C:\Users\aliss\Desktop\.NET-STUDY\obj\Debug\net8.0\.NET-Study.genruntimeconfig.cache
 C:\Users\aliss\Desktop\.NET-STUDY\obj\Debug\net8.0\ref\.NET-Study.dll
+C:\Users\aliss\Desktop\.NET-STUDY\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\aliss\Desktop\.NET-STUDY\obj\Debug\net8.0\.NET-Study.csproj.AssemblyReference.cache
+C:\Users\aliss\Desktop\.NET-STUDY\obj\Debug\net8.0\.NET-Study.csproj.Up2Date
